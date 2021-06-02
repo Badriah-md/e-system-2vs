@@ -1,0 +1,5 @@
+{
+    "github.allowUnsafeSSL": true,
+    "github.autoPublish": true,
+    "editor.fontSize": 15
+}

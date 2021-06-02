@@ -1,0 +1,27 @@
+@media only screen and (min-width:1200px){
+    body{
+        font-size: 25px;
+        font-weight:700;
+    }
+    .header{
+  height:350px;
+
+    }
+    .navbar img{
+ width: 300px;
+
+}
+}
+
+@media only screen and (max-width:574px){
+    html{
+        width: 100%;
+    }
+    .announcement{
+        display: block;
+    }
+    body{
+        width: 100%;
+        overflow-x:hidden;
+    }
+}
