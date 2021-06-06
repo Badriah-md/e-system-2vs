@@ -25,4 +25,12 @@
         width: 100%;
         overflow-x:hidden;
     }
+    .announcement .card {
+        
+        top: -32px;
+        
+    }
+    .username{
+        margin-right: 10px;
+    }
 }
