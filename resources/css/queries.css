@@ -12,8 +12,44 @@
         height: 136px;
 
 }
+.user-details {
+    margin-top: 8px;
+    margin-right: 633px;
+}
+.user-details button {
+    margin-right: 269px;
+    margin-top: -194px;
+}
 
 }
+@media only screen and (max-width:1023px){
+
+    .info-img h1{
+        font-size: 36px;
+    }
+    .info-img .seperator img {
+        margin-right:-86px
+    }
+    .user-details{
+        margin-right:5px;
+        margin-top: 17px;
+        line-height: inherit;
+    }
+    .user-details p{
+        font-size: 16px;
+    }
+    .user-details button {
+        margin-right: 735px;
+        margin-top: -181px;
+        height: 32px;
+        width: 68px;
+        padding-top: 0px;
+    
+}
+@media only screen and (max-width:768px){
+
+}
+
 @media only screen and (max-width:574px){
     html{
         width: 100%;
