@@ -44,14 +44,40 @@
         height: 35px;
         width: 72px;
         padding-top: 3px;
+        padding-right: 6px;
     
 }
  .timestamp{
      margin-top: -72px;
  }
+ 
 }
 @media only screen and (max-width:768px){
-
+    .info-img img {
+        width: 52px; 
+    }
+    .info-img .seperator img {
+        margin-right: -136px;
+    }
+    .user-details {
+        line-height: none;
+    }
+    .user-details span , .timestamp{
+       font-size: 16px; 
+       
+    }
+    .user-details button{
+        margin-right: 539px;
+        margin-top: -185px;
+        height: 30px;
+        width: 67px;
+        padding-top: 1px;
+        
+    }
+    .user-details button span{
+        font-size: 12px;
+        padding-right: 3px;
+    }
 }
 
 @media only screen and (max-width:574px){
