@@ -17,8 +17,8 @@
     margin-right: 569px;
 }
 .user-details button {
-    margin-right: 330px;
-    margin-top: -159px;
+    margin-right: 372px;
+    margin-top: -51px
 }
 
 }
@@ -39,12 +39,16 @@
         font-size: 16px;
     }
     .user-details button {
-        margin-right: 735px;
-        margin-top: -181px;
-        height: 32px;
-        width: 68px;
-        padding-top: 0px;
+        margin-right: 764px;
+        margin-top: -174px;
+        height: 35px;
+        width: 72px;
+        padding-top: 3px;
     
+}
+ .timestamp{
+     margin-top: -72px;
+ }
 }
 @media only screen and (max-width:768px){
 
