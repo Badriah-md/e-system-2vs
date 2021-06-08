@@ -261,7 +261,7 @@ margin-right: 5px;
   color: #0b5438;
 
 }
-.user-details button{
+.user-details  button{
   margin-right: 321px;
   margin-top: -156px;
   height: 35px;
@@ -421,17 +421,20 @@ ul{
   list-style-position:inside;
 }
 .alert
-{
-margin: auto;
-width: 91%;
-margin-top: 56px;
-border-radius: 25px;
-padding: 20px;
-box-shadow: -5px 4px 12px -5px;
-background: white;
-text-align: right;
-height: 334px;
-margin-bottom: 100px;
+{    margin: auto;
+  width: 91%;
+  margin-top: 132px;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: -5px 4px 12px -5px;
+  background: white;
+  text-align: right;
+  height: 389px;
+  margin-bottom: 100px;
+}
+.under-line{
+  margin-right: 41px;
+    margin-top: -12px;
 }
 .list{
 	margin-right:66px;
@@ -443,6 +446,15 @@ margin-bottom: 100px;
     float: right;
     margin-left: 11px;
 
+}
+.info-img2 img {
+  height: 50px;
+  width: 50px;
+  float: right;
+  border-radius: 0px 15px 0px 0px;
+  background-size: cover;
+  margin-right: -20px;
+  margin-top: -21px;
 }
 .new_ord
 {
@@ -516,155 +528,19 @@ margin-bottom: 100px;
 .carousel{
   margin: 0 auto;
 }
-
-
-/*  
-.info-img img {
-    margin-right: -17px;
-}
-.user-details {
-    margin-right: 570px;
-}
-.user-details button {
-    margin-right: 321px
-}
-*/
-
-_____________________________________________
-/* sara page style */
-
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-right: 350px;
-  margin-top: 135px;
+.text-center button{
+height: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #0b5438;
+  width: 83px;
+  color: #0b5438;
+  padding-top: 3px;
+  margin-top: 15px;
 }
 
-.single-chart {
-  margin-left: 52px;
-  border-radius: 25px;
-  background: white;
-  padding: 20px;
-  width: 131px;
-  height: 131px;
-  box-shadow: -5px 4px 12px -5px;
-
-}
-
-.circular-chart {
-  display: block;
-
-  max-width: 100%;
-  max-height: 250px;
-}
-
-.circle-bg {
-  fill: none;
-  stroke: #eee;
-  stroke-width: 3.8;
-}
-
-.circle {
-  fill: none;
-  stroke-width: 2.8;
-  stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
-}
-
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-
-.circular-chart.orange .circle {
-  stroke: #ff9f00;
-}
-
-.circular-chart.green .circle {
-  stroke: #4CC790;
-}
-
-.circular-chart.blue .circle {
-  stroke: #3c9ee5;
-}
-
-.percentage {
-  fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
-  text-anchor: middle;
-}
-
-.pp {
-  font-size: 2.75px;
-}
-
-.aa {
-  margin-left: 427px;
-  margin-top: 43px;
-  width: 386px;
-}
-
-#count {
-  text-align: right;
-}
-
-.orders {
-  margin-left: 52px;
-  border-radius: 25px;
-  background: white;
-  padding: 20px;
-  width: 176px;
-  height: 131px;
-  box-shadow: -5px 4px 12px -5px;
-  text-align: right;
-}
-
-.ppp {
-  font-size: 18px;
-}
-
-ul {
-  list-style: disc;
-  margin: inherit;
-  list-style-position: inside;
-}
-_____________________________________________
-.alert {
-  margin: auto;
-  width: 91%;
-  margin-top: 135px;
-  border-radius: 25px;
-  padding: 20px;
-  box-shadow: -5px 4px 12px -5px;
-  background: white;
-  text-align: right;
-  height: 398px;
-  margin-bottom: 100px
-}
-
-.alert h2 {
-  text-decoration: underline;
-}
-
-.list {
-  margin-right: 66px;
-}
-
-.count_icon {
-  width: 25px;
-  float: right;
-  margin-left: 11px;
-
-}
-
-.new_ord {
-  width: 5%;
-  float: right;
-  margin-left: 11px;
-}
-
-label {
-  color: green;
+.text-center button:hover{
+  color:white;
+  background-color: #14764f;
+  border-color: #14764f;
 }
