@@ -1,22 +1,262 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="">
 
-    <link rel="stylesheet" href="vendors\css\bootstrap.min.css">
-    <link rel="stylesheet" href="vendors\js\bootstrap.min.js">
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="vendors/js/jquery-3.6.0.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <<link rel="stylesheet" href="resources\css\style.css">
+  <link rel="stylesheet" href="vendors\css\bootstrap.min.css">
+  <script type="" src="vendors/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="vendors/js/bootstrap.bundle.js"></script>
+  <!-- style file -->
+  <link rel="stylesheet" href="resources\css\style.css">
+  <link rel="stylesheet" href="resources/css/queries.css" />
+  <!-- <script type="text/javascript" src="vendors/js/jquery-3.6.0.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>الانظمة الالكترونية</title>
+</head>
+
+<body onload="get_timestamp()">
+  <div class="container">
+    <div class="info">
+      <div class="card md-3 ">
+        <div class="info-img">
+          <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
+          <h1>نظام المستودعات</h1>
+          <div class="seperator">
+            <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
+          </div>
+          <div class="user-details">
+            <span>اسم المستخدم :</span>
+            <button type="button" name="button" class="btn btn-outline-success">
+              <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
+            </button>
+
+            <br>
+
+            <div id="timestamp" class="timestamp"></div>
+            <script type="text/javascript">
+              function get_timestamp() {
+                var refresh = 1000; // Refresh rate in milli seconds
+                mytime = setTimeout('show_timestamp()', refresh)
+              }
+
+              function show_timestamp() {
+                var d = new Date();
+                var days = ["الأحد", "الاثنين", "الثلاثاء", "الاربعاء", "الخميس", "الجمعة", "السبت"];
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                  "October",
+                  "November", "December"
+                ];
 
 
-    <title>الانظمة الالكترونية</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="danger">السلام عليكم ورحمة الله</h1>
+                var hours = d.getHours();
+                var minutes = d.getMinutes();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                var strTime = hours + ':' + minutes + ' ';
+
+                document.getElementById("timestamp").innerHTML = "اليوم: " + days[d.getDay()] + " " +
+                  " التاريخ والوقت : " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear() + " " + strTime;
+
+                get_timestamp();
+              }
+            </script>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-  </body>
+  </div>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item col-3">
+            <a class="nav-link" href="#">
+              <p>الرئيسية</p>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" href="#">
+              <p>طلبات الإدارات</p>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" href="#">
+              <p>رصيد أول مدة</p>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown col-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <p>الإستلام</p>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <p>استلام مؤقت</p>
+              </a>
+              <a class="dropdown-item" href="#">
+                <p>مذكرة استلام</p>
+              </a>
+
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown col-3">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <p>المحاضر</p>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <p>محضر فحص</p>
+              </a>
+              <a class="dropdown-item" href="#">
+                <p>محضر إستلام</p>
+              </a>
+
+            </div>
+          </li>
+
+
+
+          <li class="nav-item col-3 ">
+            <a class="nav-link" href="#">
+              <p>التقارير </p>
+            </a>
+          </li>
+
+          <!-- <li class="nav-item col">
+            <a class="nav-link" href="#"><p>دليل المستخدم</p></a>
+          </li> -->
+
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="alert">
+    <div class="info-img2">
+      <img src="resources/images/AdobeStock_117127744.jpeg" class="new_ord"></img>
+    </div>
+    <span style="font-size: 20pt; color:green;">طلب جديد</span>
+    <br>
+    <span style="color: green;">ـــــــــــــــــــــــــــــــــــ</span>
+    <br>
+
+    <form class="g-3">
+      <div class="row m-2">
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">الاسم</label>
+            <input type="text" class="col-md-8 form-control">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">رقم الهوية</label>
+            <input type="tel" class="col-md-8 form-control">
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-2">
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">رقم الجوال</label>
+            <div class="col-md-8">
+              <div class="row">
+                <input type="tel" class="col-md-9 form-control">
+                <input type="tel" class="col-md-3 form-control text-center" value="966+" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">نوع الطلب</label>
+            <input type="text" class="col-md-8 form-control">
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-2">
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">المدينة</label>
+            <select class="col-md-8 form-select">
+              <option selected>قم بالاختيار</option>
+              <option value="1">ابها</option>
+              <option value="2">خميس مشيط</option>
+              <option value="3">بيشة</option>
+              <option value="4">النماص</option>
+              <option value="5">محايل عسير</option>
+              <option value="6">ظهران الجنوب</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">الحي</label>
+            <select class="col-md-8 form-select">
+              <option selected>قم بالاختيار</option>
+              <option value="1">الإسكان</option>
+              <option value="2">الجزيرة</option>
+              <option value="3">المنسك</option>
+              <option value="4">الروضة</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-2">
+        <div class="col-md-6">
+          <div class="row">
+            <label class="col-md-4 col-form-label">تاريخ الطلب</label>
+            <input type="date" class="col-md-8 form-control" placeholder="dd-mm-yyyy" value="">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center m-4">
+        <button type="submit" class="btn btn-success">إرسال</button>
+      </div>
+
+    </form>
+
+  </div>
+
+
+  <footer>
+
+    <div class="social-media">
+
+      <ul>
+        <p>جميع الحقوق محفوظة لامانة منطقة عسير</p>
+        <li> <a href="#"> <img src="resources/images/Icon awesome-snapchat-ghost.png" alt=""> </a> </li>
+        <li> <a href="#"> <img src="resources/images/Icon awesome-instagram.png" alt=""> </a> </li>
+        <li> <a href="#"> <img src="resources/images/Icon awesome-twitter.png" alt=""> </a> </li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
 </html>
