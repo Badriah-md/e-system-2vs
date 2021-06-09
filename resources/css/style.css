@@ -45,6 +45,7 @@ height: 100px;
 }
 .dropdown-menu{
   text-align: right;
+  border: none;
 }
 .dropdown-item{
   text-align: right;
@@ -55,6 +56,8 @@ height: 100px;
   left: 0;
   float:left;
   position: absolute;
+  background-color: white;
+
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255 255 255);
@@ -261,18 +264,22 @@ margin-right: 5px;
   color: #0b5438;
 
 }
-.user-details button{
+.user-details  button{
   margin-right: 321px;
   margin-top: -156px;
   height: 35px;
   background-color: white;
   border-radius: 10px;
   border-color: #0b5438;
-  width: 75px;
+  width: 83px;
   color: #0b5438;
   padding-top: 3px;
+ 
 }
-
+.log-out-icon {
+  padding-left: 5px;
+  padding-top: 4px;
+}
 
 .user-details button:hover{
   color:white;
@@ -417,17 +424,20 @@ ul{
   list-style-position:inside;
 }
 .alert
-{
-margin: auto;
-width: 91%;
-margin-top: 56px;
-border-radius: 25px;
-padding: 20px;
-box-shadow: -5px 4px 12px -5px;
-background: white;
-text-align: right;
-height: 334px;
-margin-bottom: 100px;
+{    margin: auto;
+  width: 91%;
+  margin-top: 132px;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: -5px 4px 12px -5px;
+  background: white;
+  text-align: right;
+  height: 389px;
+  margin-bottom: 100px;
+}
+.under-line{
+  margin-right: 41px;
+    margin-top: -12px;
 }
 .list{
 	margin-right:66px;
@@ -439,6 +449,15 @@ margin-bottom: 100px;
     float: right;
     margin-left: 11px;
 
+}
+.info-img2 img {
+  height: 50px;
+  width: 50px;
+  float: right;
+  border-radius: 0px 15px 0px 0px;
+  background-size: cover;
+  margin-right: -20px;
+  margin-top: -21px;
 }
 .new_ord
 {
@@ -512,16 +531,19 @@ margin-bottom: 100px;
 .carousel{
   margin: 0 auto;
 }
+.text-center button{
+height: 35px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #0b5438;
+  width: 83px;
+  color: #0b5438;
+  padding-top: 3px;
+  margin-top: 15px;
+}
 
-
-/*  
-.info-img img {
-    margin-right: -17px;
+.text-center button:hover{
+  color:white;
+  background-color: #14764f;
+  border-color: #14764f;
 }
-.user-details {
-    margin-right: 570px;
-}
-.user-details button {
-    margin-right: 321px
-}
-*/

@@ -15,33 +15,60 @@
   <!-- <script type="text/javascript" src="vendors/js/jquery-3.6.0.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>الانظمة الالكترونية</title>
 </head>
 
-<body>
+<body onload="get_timestamp()">
   <div class="container">
     <div class="info">
-      <div class="card col-md-11 col-xl-11 col-xs-12 ">
+      <div class="card md-3 ">
         <div class="info-img">
-          <img src="resources/images/green1.png" alt="">
+          <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
           <h1>نظام المستودعات</h1>
           <div class="seperator">
-            <img src="resources/images/line-green.png" alt="">
+            <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
           </div>
           <div class="user-details">
-            <p>اسم المستخدم:</p>
-            <p>اليوم: الأحد التاريخ والوقت: 12:40 27/5/2021</p>
-            <button type="button" class="btn btn-outline-success">
-              <!-- <i class="log-out" style="color: red;"></i> -->
-              خروج
+            <span>اسم المستخدم :</span>
+            <button type="button" name="button" class="btn btn-outline-success">
+              <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
             </button>
+
+            <br>
+
+            <div id="timestamp" class="timestamp"></div>
+            <script type="text/javascript">
+              function get_timestamp() {
+                var refresh = 1000; // Refresh rate in milli seconds
+                mytime = setTimeout('show_timestamp()', refresh)
+              }
+
+              function show_timestamp() {
+                var d = new Date();
+                var days = ["الأحد", "الاثنين", "الثلاثاء", "الاربعاء", "الخميس", "الجمعة", "السبت"];
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                  "October",
+                  "November", "December"
+                ];
+
+
+                var hours = d.getHours();
+                var minutes = d.getMinutes();
+                var ampm = hours >= 12 ? 'pm' : 'am';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                var strTime = hours + ':' + minutes + ' ';
+
+                document.getElementById("timestamp").innerHTML = "اليوم: " + days[d.getDay()] + " " +
+                  " التاريخ والوقت : " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear() + " " + strTime;
+
+                get_timestamp();
+              }
+            </script>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
 
@@ -56,23 +83,23 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item col-3">
+          <li class="nav-item col-3 col-xs-12">
             <a class="nav-link" href="#">
               <p>الرئيسية</p>
             </a>
           </li>
-          <li class="nav-item col-3">
+          <li class="nav-item col-3 col-xs-12">
             <a class="nav-link" href="#">
               <p>طلبات الإدارات</p>
             </a>
           </li>
-          <li class="nav-item col-3">
+          <li class="nav-item col-3 col-xs-12">
             <a class="nav-link" href="#">
               <p>رصيد أول مدة</p>
             </a>
           </li>
 
-          <li class="nav-item dropdown col-3">
+          <li class="nav-item dropdown col-3 col-xs-12">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <p>الإستلام</p>
@@ -89,7 +116,7 @@
           </li>
 
 
-          <li class="nav-item dropdown col-3">
+          <li class="nav-item dropdown col-3 col-xs-12">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <p>المحاضر</p>

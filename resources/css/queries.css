@@ -13,16 +13,16 @@
 
 }
 .user-details {
-    margin-top: 8px;
-    margin-right: 633px;
+    margin-top: 20px;
+    margin-right: 569px;
 }
 .user-details button {
-    margin-right: 269px;
-    margin-top: -194px;
+    margin-right: 372px;
+    margin-top: -45px;
 }
 
 }
-@media only screen and (max-width:1023px){
+@media only screen and (max-width:1024px){
 
     .info-img h1{
         font-size: 36px;
@@ -39,6 +39,7 @@
         font-size: 16px;
     }
     .user-details button {
+<<<<<<< HEAD
         margin-right: 735px;
         margin-top: -181px;
         height: 32px;
@@ -47,8 +48,51 @@
     }
 }
 
+=======
+        margin-right: 764px;
+        /* margin-top: -174px; */
+        height: 35px;
+        width: 72px;
+        /* padding-top: 3px; */
+        padding-right: 6px;
+    
+}
+ .timestamp{
+     margin-top: -72px;
+ }
+ 
+}
+>>>>>>> a5a512386a4286f0bf2b798c7b8c3bcbf06129d4
 @media only screen and (max-width:768px){
-
+    .info-img img {
+        width: 52px; 
+    }
+    .info-img .seperator img {
+        margin-right: -166px;
+    }
+    .user-details {
+        line-height: none;
+    }
+    .user-details span , .timestamp{
+       font-size: 16px; 
+       
+    }
+    .user-details button{
+        margin-right: 539px;
+        margin-top: -185px;
+        height: 30px;
+        width: 67px;
+        padding-top: 1px;
+        
+    }
+    .user-details button span{
+        font-size: 12px;
+        padding-right: 3px;
+    }
+    .navbar-nav{
+        background-color: white;
+        width:100%;
+    }
 }
 
 @media only screen and (max-width:574px){
