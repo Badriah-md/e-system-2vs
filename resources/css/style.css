@@ -56,7 +56,7 @@ height: 100px;
   left: 0;
   float:left;
   position: absolute;
-  background-color: white;
+  /* background-color: white; */
 
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -113,6 +113,7 @@ nav ul li:after{
   top: -80px;
   text-align: right;
   box-shadow: -4px 4px 5px 1px #0000001a;
+  
 
 }
 .card .card-header{
@@ -230,11 +231,12 @@ margin-right: 5px;
   float: right;
     padding: 25px;
     color: #0b5438;
-    padding-left: 197px;
-    margin-right: -17px;
+    padding-left: 139px;
+    margin-right: -22px;
 }
 .seperator{
-  float: right;
+  position: relative;
+    right: 10px;
 
 }
 .info-img .seperator img{
@@ -259,9 +261,11 @@ margin-right: 5px;
   margin-top: 20px;
   font-weight: 300;
   margin-right: 570px;
-  position: relative;
+  
   line-height: initial;
   color: #0b5438;
+  position: absolute;
+    right: 7px;
 
 }
 .user-details  button{
@@ -483,8 +487,9 @@ ul{
   border: none;
   border-radius: 50%;
   background-color: white;
-  max-width: 160px;
-  height: 152px;
+  /* max-width: 160px;
+  height: 152px; */
+  margin-bottom: 50px;
 }
 
 .card-img-circle {
@@ -520,7 +525,7 @@ ul{
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 174px !important;
+  /* height: 174px !important; */
 }
 
 /*
@@ -546,4 +551,41 @@ height: 35px;
   color:white;
   background-color: #14764f;
   border-color: #14764f;
+}
+.img-card {
+  height: 48px;
+  width: 80%;
+  margin-top: 61px;
+  margin-left: 22px;
+}
+
+.card-c{
+transition:0.5s;
+cursor:pointer;
+border-radius: 100%;
+background-color: white;
+width: 68%;
+height: 165px;
+margin-bottom: 30%;
+}
+
+.card-c:hover{
+transform: scale(1.05);
+box-shadow: 10px 10px 15px rgba(58, 59, 58, 0.219);
+}
+.card-c::before, .card-c::after {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+transform: scale3d(0, 0, 1);
+transition: transform 2s ease-out 2s;
+content: '';
+pointer-events: none;
+}
+.timestamp{
+  position: relative;
+    bottom: 24px;
+
 }
