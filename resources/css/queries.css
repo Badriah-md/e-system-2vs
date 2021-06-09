@@ -39,16 +39,6 @@
         font-size: 16px;
     }
     .user-details button {
-<<<<<<< HEAD
-        margin-right: 735px;
-        margin-top: -181px;
-        height: 32px;
-        width: 68px;
-        padding-top: 0px;
-    }
-}
-
-=======
         margin-right: 764px;
         /* margin-top: -174px; */
         height: 35px;
@@ -62,7 +52,6 @@
  }
  
 }
->>>>>>> a5a512386a4286f0bf2b798c7b8c3bcbf06129d4
 @media only screen and (max-width:768px){
     .info-img img {
         width: 52px; 
