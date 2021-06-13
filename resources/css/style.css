@@ -22,6 +22,9 @@
 body{
   background-color: #EFEFEF;
 }
+.dark-mode{
+  background-color: rgb(88, 88, 88);
+}
 .header{
   /* object-fit: cover; */
   background-image: url(../images/AdobeStock_117127744.jpeg);
@@ -144,6 +147,10 @@ footer{
   position: relative;
   width: 100%;
   bottom: 0 ;
+  margin-top: 80px;
+}
+.footer h4{
+  font-size: 20px;
 }
 footer p{
   padding-right: 10px;
@@ -163,7 +170,7 @@ margin-right: 5px;
   height: 20px;
 }
 .social-media ul p{
-  padding-top: 10px;
+  /* padding-top: 10px; */
   float: right;
   color: grey;
 }
@@ -436,7 +443,7 @@ ul{
   box-shadow: -5px 4px 12px -5px;
   background: white;
   text-align: right;
-  height: 389px;
+  /* height: 389px; */
   margin-bottom: 100px;
 }
 .under-line{
@@ -588,4 +595,15 @@ pointer-events: none;
   position: relative;
     bottom: 24px;
 
+}
+.darkmood button{
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.darkmood button i{
+  color: green;
+}
+p{
+  margin-bottom: 0 !important;
 }
