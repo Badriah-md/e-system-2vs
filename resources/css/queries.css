@@ -69,9 +69,15 @@
     }
     .user-details {
         line-height: none;
+        margin-top: 58px;
     }
     .user-details span , .timestamp{
        font-size: 16px; 
+       position: absolute;
+    left: 20px;
+    /* top: 68px; */
+    margin-top: 10p;
+    text-align: right;
        
     }
     .user-details button{
@@ -90,6 +96,14 @@
         background-color: white;
         width:100%;
     }
+    .navbar {
+        color: white !important;
+        z-index: 1;
+    }
+    .navbar-nav{
+        background-color: white;
+    }
+    
 }
 
 @media only screen and (max-width:574px){
@@ -113,6 +127,19 @@
     }
     .card-c {
         margin-right: 34px;
+    }
+    .info-img h1 {
+        float: right;
+        padding: 25px;
+        color: #0b5438;
+        /* padding-left: 139px; */
+        /* margin-right: -22px; */
+        position: absolute;
+        right: 37px;
+        font-size: 31px;
+    }
+    .list {
+        margin-right: 0px;
     }
     
 }
