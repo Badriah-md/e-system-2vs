@@ -576,31 +576,6 @@ height: 35px;
   margin-left: 22px;
 }
 
-.card-c{
-transition:0.5s;
-cursor:pointer;
-border-radius: 100%;
-background-color: white;
-width: 68%;
-height: 165px;
-margin-bottom: 30%;
-}
-
-.card-c:hover{
-transform: scale(1.05);
-box-shadow: 10px 10px 15px rgba(58, 59, 58, 0.219);
-}
-.card-c::before, .card-c::after {
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-transform: scale3d(0, 0, 1);
-transition: transform 2s ease-out 2s;
-content: '';
-pointer-events: none;
-}
 .timestamp{
   position: relative;
     bottom: 24px;
