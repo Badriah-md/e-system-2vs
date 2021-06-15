@@ -26,7 +26,6 @@
 }
 .user-details button {
     margin-right: 372px;
-    margin-top: -45px;
 }
 
 }
@@ -46,13 +45,21 @@
     .user-details p{
         font-size: 16px;
     }
-    .user-details button {
-        margin-right: 764px;
-        /* margin-top: -174px; */
-        height: 35px;
-        width: 72px;
-        /* padding-top: 3px; */
-        padding-right: 6px;
+
+    ul li .log-out {
+    left: -54px;
+     
+}
+    .user-details {
+        text-align: right;
+        /* margin-top: 20px; */
+        font-weight: 300;
+        margin-right: 442px;
+        line-height: inherit;
+        color: #0b5438;
+        position: absolute;
+        right: 7px;
+    }
     
 }
  .timestamp{
@@ -80,14 +87,7 @@
     text-align: right;
        
     }
-    .user-details button{
-        margin-right: 539px;
-        margin-top: -185px;
-        height: 30px;
-        width: 67px;
-        padding-top: 1px;
-        
-    }
+   
     .user-details button span{
         font-size: 12px;
         padding-right: 3px;

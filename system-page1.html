@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <script type="text/javascript" src="vendors/js/jquery-3.6.0.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="vendors\css\bootstrap.min.css">
   <script type="" src="vendors/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="vendors/js/bootstrap.bundle.js"></script>
@@ -29,12 +30,14 @@
           <div class="seperator">
             <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
             <div class="user-details">
-              <span>اسم المستخدم :</span>
-              <button type="button" name="button" class="btn btn-outline-success">
-                <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
-              </button>
-  
-              <br>
+              <ul>
+                <li class="user-date-li"><span>اسم المستخدم :</span></li>
+                <li class="user-date-li">اليوم : الثلاثاء التاريخ : 2021/6/14 الوقت : 11:30</li>
+                <li><button type="button" name="button" class="log-out btn btn-outline-success">
+                    <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
+                  </button></li>
+              </ul>
+              <!-- <br>
   
               <div id="timestamp" class="timestamp"></div>
               <script type="text/javascript">
@@ -65,10 +68,10 @@
   
                   get_timestamp();
                 }
-              </script>
+              </script> -->
             </div>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -84,23 +87,23 @@
       </button>
       <div class="collapse navbar-collapse sys-nav" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item col-3 col-xs-12">
+          <li class="nav-item col-3 col-xs-12 col-md-2">
             <a class="nav-link" href="#">
               <p>الرئيسية</p>
             </a>
           </li>
-          <li class="nav-item col-3 col-xs-12">
+          <li class="nav-item col-3 col-xs-12 col-md-2">
             <a class="nav-link" href="#">
               <p>طلبات الإدارات</p>
             </a>
           </li>
-          <li class="nav-item col-3 col-xs-12">
+          <li class="nav-item col-3 col-xs-12 col-md-2">
             <a class="nav-link" href="#">
               <p>رصيد أول مدة</p>
             </a>
           </li>
 
-          <li class="nav-item dropdown col-3 col-xs-12">
+          <li class="nav-item dropdown col-3 col-xs-12 col-md-2">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <p>الإستلام</p>
@@ -117,7 +120,7 @@
           </li>
 
 
-          <li class="nav-item dropdown col-3 col-xs-12">
+          <li class="nav-item dropdown col-3 col-xs-12 col-md-2">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <p>المحاضر</p>
@@ -135,7 +138,7 @@
 
 
 
-          <li class="nav-item col-3 ">
+          <li class="nav-item col-3 col-md-2">
             <a class="nav-link" href="#">
               <p>التقارير </p>
             </a>
@@ -220,7 +223,7 @@
             </svg>
           </div>
         </div> -->
-        <!-- <div class="col-3">
+    <!-- <div class="col-3">
           <div class="orders">
             <img src="resources/images/12.png" class="count_icon"></img>
             <p id="count">288</p>
