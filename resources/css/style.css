@@ -249,7 +249,7 @@ margin-right: 5px;
 .info-img .seperator img{
   float: right;
   position: relative;
-  right:67px;
+  right: 137px;
   height: 86px;
   width: 8px;
   border-radius: 10px;
@@ -268,8 +268,7 @@ margin-right: 5px;
   margin-top: 20px;
   font-weight: 300;
   margin-right: 570px;
-  
-  line-height: initial;
+  line-height:inherit;
   color: #0b5438;
   position: absolute;
     right: 7px;
