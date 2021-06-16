@@ -34,9 +34,15 @@
     .info-img h1{
         font-size: 36px;
     }
-    .info-img .seperator img {
-        margin-right:-86px
+    .info-img h1 {
+        padding: 32px;
     }
+    .info-img img {
+        height: 102px;
+        margin-right: -5px;
+        margin-top: -1px;
+    }
+
     .user-details{
         margin-right:5px;
         margin-top: 17px;
@@ -61,51 +67,55 @@
         right: 7px;
     }
     
-}
  .timestamp{
      margin-top: -72px;
  }
- 
 }
+
 @media only screen and (max-width:768px){
     .info-img img {
-        width: 52px; 
+        height: 102px;
+        margin-right: 0px;
+        margin-top: -1px;
     }
+    .info-img h1 {
+        font-size: 34px;
+        padding: 30px;
+    }
+
     .info-img .seperator img {
-        margin-right: -166px;
+        margin-right: -55px;
     }
     .user-details {
-        line-height: none;
-        margin-top: 58px;
+        margin-right: 371px;
     }
-    .user-details span , .timestamp{
-       font-size: 16px; 
-       position: absolute;
-    left: 20px;
-    /* top: 68px; */
-    margin-top: 10p;
-    text-align: right;
-       
+    .user-details ul {
+        margin-right: 15px;
+    }
+    ul li .log-out {
+        left: 113px;
+        top: 39px;
+    }
+    .log-out span{
+        display: none;
+    }
+    .user-details button{
+        border:none;
+        margin-left: 10px;
+        width: 40px;
+    }
+    .date-time{
+        display: none;
     }
    
-    .user-details button span{
-        font-size: 12px;
-        padding-right: 3px;
+    #navbarNavDropdown {
+        background-color: #f8f9fa;
+        z-index: 1; 
+        padding: 15px;
+        margin-top: 6px;
+
     }
-    .sys-nav.navbar-nav{
-        background-color: white;
-        width:100%;
-    }
-    .navbar {
-        color: white !important;
-        z-index: 1;
-    }
-    .navbar-nav{
-        background-color: white;
-    }
-    .announcement{
-        display: flow-root !important;
-    }
+
 }
 
 @media only screen and (max-width:574px){
@@ -146,5 +156,38 @@
     .flex-wrapper{
         display: flow-root;
     }
-    
+    .user-name{
+        display: none;
+    }
+    ul li .log-out {
+        left: 109px;
+        top: 42px;
+    }
+    .info-img .seperator img{
+        display: none;
+    }
+    .info-img h1 {
+        right:74px;
+    }
+    .info-img img {
+        height: 102px;
+        margin-right: -2px;
+        margin-top: -1px;
+    }
+    .log-out span{
+        display: none;
+    }
+    .user-details button{
+        border:none;
+        margin-left: 10px;
+        width: 40px;
+    }
+    #navbarNavDropdown {
+        background-color: #f8f9fa;
+        z-index: 1;
+        padding: 15px;
+        margin-top: 6px;
+
+    }
+
 }
