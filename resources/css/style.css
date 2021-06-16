@@ -147,7 +147,7 @@ footer{
   position: relative;
   width: 100%;
   bottom: 0 ;
-  margin-top: 80px;
+  margin-top: 240px;
 }
 .footer h4{
   font-size: 20px;
@@ -347,20 +347,26 @@ a .dropdown-item{
 
 
 /* --------------------------- */
+#count{
+  font-size: 30px;
+}
 .flex-wrapper {
  display: flex;
     flex-flow: row nowrap;
-    margin-right: 350px;
+    margin-right: 148px;
     margin-top: 135px;
 	}
 .single-chart {
-    margin-left: 52px;
+    /* margin-left: 52px; */
+    
+    margin: 0 auto;
+    margin: 0 auto;
     border-radius: 25px;
     background: white;
-    padding: 20px;
-    width: 131px;
-    height: 131px;
-	box-shadow: -5px 4px 12px -5px;
+    padding: 10px;
+    width: 167px;
+    height: 166px;
+    box-shadow: -5px 4px 12px -5px;
 
 }
 
@@ -425,17 +431,18 @@ text-align: right;
 
 .orders
 {
-	    margin-left: 52px;
+	    /* margin-left: 52px; */
+      margin: 0 28px;
     border-radius: 25px;
     background: white;
     padding: 20px;
-    width: 176px;
-    height: 131px;
+    width: 215px;
+    height: 166px;
     box-shadow: -5px 4px 12px -5px;
     text-align: right;
 }
 .ppp{
-	font-size: 18px;
+	font-size: 27px;
 }
 
 ul{
@@ -446,7 +453,7 @@ ul{
 .alert
 {    margin: auto;
   width: 91%;
-  margin-top: 132px;
+  margin-top: 93px;
   border-radius: 25px;
   padding: 20px;
   box-shadow: -5px 4px 12px -5px;
@@ -466,7 +473,7 @@ ul{
 
 .count_icon
 {
-	width: 25px;
+	width: 45px;
     float: right;
     margin-left: 11px;
 
@@ -613,7 +620,7 @@ p{
   height: 100px;
 }
 .system-name{
-  position: absolute;
+  /* position: absolute;
     top: 21px;
-    color: #0e6d45;
+    color: #0e6d45; */
 }
