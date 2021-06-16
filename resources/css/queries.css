@@ -127,9 +127,7 @@
     .username{
         margin-right: 10px;
     }
-    .card-c {
-        margin-right: 34px;
-    }
+  
     .info-img h1 {
         float: right;
         padding: 25px;
@@ -143,8 +141,17 @@
     .list {
         margin-right: 0px;
     }
-    .flex-wrapper{
-        display: flow-root;
+
+    .carousel-control-prev {
+        display: none;
     }
-    
+
+    .carousel-control-next {
+        display: none;
+    }
+
+    .cards-wrapper {
+        display: none;
+    }
+   
 }
