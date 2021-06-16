@@ -17,20 +17,67 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>الانظمة الالكترونية</title>
+  <style>
+      ul{
+          /* margin: 30px 0; */
+          height: 100px;
+          width: 100%;
+          list-style: none;
+          background-color: aliceblue;
+          border-radius: 10px;
+          display: flex;
+      }
+      ul li .seperator{
+          height: 100px;
+          width: 10px;
+          border-radius: 10px;
+      }
+      .image-seperator img {
+    width: 10px;
+    height: 100px;
+}
+.system-name{
+    text-align: right;
+}
+  </style>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="header-info ">
-                <div class="image-corner col-xl-1">
-                    <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
-                </div>
-                <div class="col-xl-5 system-name">
-                    <h1>نظام المستودعات</h1>
-                </div>
-                <div class="col-xl-1 seperator">
-                    <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
-                </div>
+            <div class=" ">
+                <ul>
+                    <li class="col-5">
+                        <ul>
+                            <li class="col">
+                                <div class="image-corner ">
+                                    <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
+                                </div>  
+                            </li>
+                            <li class="col">
+                                <div class=" system-name">
+                                    <h1>نظام المستودعات</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="col-1"> 
+                        <div class="image-seperator ">
+                            <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
+                        </div> 
+                        
+                    </li>
+                    <li class="col-3">
+                        <p>user</p>
+                        <p>time date</p>
+                    </li>
+                    <li class="col-3">
+                        <button>wow</button>
+                    </li>
+                </ul>
+                
+                
+                
 
             </div>
         </div>
