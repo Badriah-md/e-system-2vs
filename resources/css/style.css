@@ -590,6 +590,7 @@ a .card-title:active {
 .carousel{
   margin: 0 auto;
 }
+
 .text-center button{
   height: 35px;
   background-color: white;
@@ -614,7 +615,10 @@ a .card-title:active {
   margin-left: 22px;
 }
 
+
+
 /* dark mood */
+
 .timestamp{
   position: relative;
     bottom: 24px;
