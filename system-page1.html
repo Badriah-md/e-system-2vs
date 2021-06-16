@@ -27,6 +27,13 @@
         <div class="info-img">
           <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
           <h1>نظام المستودعات</h1>
+          <div class="mobile-view col-xs-12">
+            <select name="user-option" id="">
+              <option value="" default>اسم المستخدم</option>
+              <option value="" disabled>التاريخ والوقت</option>
+              <option value="">خروج</option>
+            </select>
+          </div>
           <div class="seperator">
             <img src="resources/images/AdobeStock_117127744.jpeg" alt="">
             <div class="user-details">
@@ -37,38 +44,7 @@
                     <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
                   </button></li>
               </ul>
-              <!-- <br>
-  
-              <div id="timestamp" class="timestamp"></div>
-              <script type="text/javascript">
-                function get_timestamp() {
-                  var refresh = 1000; // Refresh rate in milli seconds
-                  mytime = setTimeout('show_timestamp()', refresh)
-                }
-  
-                function show_timestamp() {
-                  var d = new Date();
-                  var days = ["الأحد", "الاثنين", "الثلاثاء", "الاربعاء", "الخميس", "الجمعة", "السبت"];
-                  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
-                    "October",
-                    "November", "December"
-                  ];
-  
-  
-                  var hours = d.getHours();
-                  var minutes = d.getMinutes();
-                  var ampm = hours >= 12 ? 'pm' : 'am';
-                  hours = hours % 12;
-                  hours = hours ? hours : 12; // the hour '0' should be '12'
-                  minutes = minutes < 10 ? '0' + minutes : minutes;
-                  var strTime = hours + ':' + minutes + ' ';
-  
-                  document.getElementById("timestamp").innerHTML = "اليوم: " + days[d.getDay()] + " " +
-                    " التاريخ والوقت : " + d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear() + " " + strTime;
-  
-                  get_timestamp();
-                }
-              </script> -->
+             
             </div>
           </div>
 
@@ -195,7 +171,7 @@
 
 
       <div class="flex-wrapper">
-        <div class="col-3 col-xs-12">
+        <div class="col-lg-3 col-md-4 col-xs-12">
           <div class="single-chart ">
             <svg viewBox="0 0 36 36" class="circular-chart orange ">
               <path class="circle-bg" d="M18 2.0845
@@ -209,7 +185,7 @@
             </svg>
           </div>
         </div>
-        <div class="col-3 col-xs-12">
+        <div class="col-lg-3 col-md-4 col-xs-12">
           <div class="single-chart">
             <svg viewBox="0 0 36 36" class="circular-chart green">
               <path class="circle-bg" d="M18 2.0845
@@ -223,7 +199,7 @@
             </svg>
           </div>
         </div>
-        <div class="col-3 col-xs-12">
+        <div class="col-lg-3 col-md-4 col-xs-12">
           <div class="orders">
             <img src="resources/images/12.png" class="count_icon"></img>
             <p id="count">288</p>

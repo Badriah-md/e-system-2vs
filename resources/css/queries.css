@@ -4,7 +4,11 @@
         
     }
 }
-
+@media only screen and (min-width:1200px){
+    .mobile-view{
+        display: none;
+    }
+}
 
 @media only screen and (max-width:1200px){
     
@@ -27,6 +31,9 @@
 }
 .user-details button {
     margin-right: 372px;
+}
+.mobile-view{
+    display: none;
 }
 
 }
@@ -154,6 +161,25 @@
         font-size: 16px;
         margin-top: 20px;
     }
+    .mobile-view{
+        display: none;
+    }
+    .orders {
+        /* margin-left: 52px; */
+        margin: 0 0px;
+        width: 145px;
+    }
+    .flex-wrapper {
+        
+        flex-flow: row nowrap;
+        margin-right: 5px;
+        margin-top: 135px;
+    }
+    .announcement {
+        display: inline;
+        margin: 0 auto;
+        margin-right: 80px;
+    }
 
 }
 
@@ -179,13 +205,13 @@
   
     .info-img h1 {
         float: right;
-        padding: 25px;
-        color: #0b5438;
-        /* padding-left: 139px; */
-        /* margin-right: -22px; */
-        position: absolute;
-        right: 37px;
-        font-size: 31px;
+    padding: 12px;
+    color: #0b5438;
+    /* padding-left: 139px; */
+    /* margin-right: -22px; */
+    position: absolute;
+    right: 77px;
+    font-size: 26px;
     }
     .list {
         margin-right: 0px;
@@ -202,5 +228,44 @@
     .cards-wrapper {
         display: none;
     }
-   
+    .mobile-view{
+        display: block;
+    position: relative;
+    top: 57px;
+    left: 91px;
+    }
+    .mobile-view select{
+        border: none;
+    }
+    .seperator{
+        display: none;
+    }
+    .flex-wrapper {
+        display: block;
+        flex-flow: row nowrap;
+        margin-right: 5px;
+        margin-top: 135px;
+    }
+    .single-chart {
+        /* margin-left: 52px; */
+        margin: 0 auto;
+        margin: 26px auto;
+        border-radius: 25px;
+        background: white;
+        padding: 10px;
+        width: 248px;
+        height: auto;
+        box-shadow: -5px 4px 12px -5px;
+    }
+    .orders {
+        /* margin-left: 52px; */
+        margin: 0 auto;
+        width: 248px;
+    }
+    .social-media ul p {
+        padding-top: 10px;
+        float: right;
+        color: grey;
+        font-size: 13px;
+    }
 }

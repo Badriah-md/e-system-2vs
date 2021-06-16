@@ -246,10 +246,10 @@ margin-right: 5px;
     right: 10px;
 
 }
-.info-img .seperator img{
+.info-img .seperator img {
   float: right;
   position: relative;
-  right: 137px;
+  right: 65px;
   height: 86px;
   width: 8px;
   border-radius: 10px;
@@ -462,6 +462,21 @@ ul{
   min-height: 278px;
   /* height: 389px; */
   margin-bottom: 100px;
+}
+.alert2{
+  
+ margin: auto;
+  width: 91%;
+  margin-top: 158px;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: -5px 4px 12px -5px;
+  background: white;
+  text-align: right;
+  min-height: 278px;
+  /* height: 389px; */
+  margin-bottom: 100px;
+
 }
 .under-line{
   margin-right: 41px;
