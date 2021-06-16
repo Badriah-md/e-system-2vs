@@ -4,3 +4,4 @@ function darkFunction() {
      document.getElementById("dark-toggle").value="الوضع الابيض"
      
  }
+
