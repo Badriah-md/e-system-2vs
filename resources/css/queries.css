@@ -78,6 +78,22 @@
  .timestamp{
      margin-top: -72px;
  }
+ footer {
+    padding: 10px;
+    height: 50px;
+    text-align: right;
+    background-color: #DCDCDC;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 465px;
+}
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-right: 31px;
+    margin-top: 135px;
+}
 }
 
 @media only screen and (max-width:768px){
@@ -201,6 +217,21 @@
     }
     .username{
         margin-right: 10px;
+    text-align: right;
+    margin-top: 79px;
+    padding-right: 80px;
+    color: white;
+    /* font-size: 10px !important; */
+    display: flex;
+    }
+    .navbar nav {
+        color: white;
+        top: 81px;
+        /* left: 0; */
+        right: 0;
+        float: left;
+        position: absolute;
+        /* background-color: white; */
     }
   
     .info-img h1 {
@@ -267,5 +298,61 @@
         float: right;
         color: grey;
         font-size: 13px;
+    }
+    .navbar img {
+        width: 276px;
+        height: 107px;
+    }
+    .navbar img {
+        position: absolute;
+        top: 0px;
+        right: -17px;
+        height: 100px;
+        width: 250px;
+        float: left;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+     /* color: rgb(21 11 11); */
+        float: right;
+        padding-right: 29px;
+    }
+    .collapse.show {
+        margin-top: 11px;
+        display: block;
+        z-index: 1;
+        /* background-color: white; */
+    padding: 10px 0;
+    }
+    
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        background-color: #7878780f;;
+    }
+    .menu-list{
+        background-color: #868686b0;
+    border-radius: 10px;
+    }
+    .user-menu{
+        top: -8px;
+    height: 51px;
+    /* margin-right: 48px; */
+    right: 91px;
+    border-radius: 16px;
+    background-color: white;
+
+    }
+    footer {
+        margin-top: 151px;
+    }
+    .show2 {
+        /* margin-top: 11px; */
+        display: block;
+        background-color: white;
+        z-index: 1;
+    }
+    .dropdown-item {
+        text-align: right;
+        color: white;
     }
 }
