@@ -568,7 +568,8 @@ ul{
 
 .img-userguide {
   width: 47%;
-  margin-top: 41px;
+  /* margin-top: 41px; */
+  padding-top: 20px;
   margin-left: 52px;
 }
 
