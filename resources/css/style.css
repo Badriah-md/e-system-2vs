@@ -541,7 +541,7 @@ ul{
 .alert2{
   
  margin: auto;
-  width: 91%;
+  width: 90%;
   margin-top: 158px;
   border-radius: 25px;
   padding: 20px;
@@ -853,4 +853,20 @@ padding-left: 10px;
 }
 .category ul li:hover span i{
   color: #c8b356;
+}
+.fa-chevron-right:before {
+  /* background-color: green; */
+  content: "\f054";
+  padding: 10px;
+  /* border-color: white; */
+  border: 2px solid white;
+  border-radius: 5px;
+  display: revert;
+  margin-left: 25px;
+}
+.user-icon{
+  display: flex;
+}
+.user-icon a{
+  color: white;
 }
