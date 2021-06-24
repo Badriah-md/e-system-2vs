@@ -36,6 +36,44 @@
     display: none;
 }
 
+@media only screen and (max-width:1200px){
+
+    .cards-wrapper {
+        height: 215px;
+        width: 97%;
+       }
+       .img-technical-support  {
+        width: 57%;
+        margin-top: 22px;
+        margin-left: 35px;
+       }
+       .img-checklist {
+        width: 57%;
+        margin-top: 20px;
+        margin-left: 33px;
+    }
+    .img-CustomerSupport {
+        width: 55%;
+        margin-top: 28px;
+        margin-left: 28px;
+    }
+    .img-listcall {
+        width: 46%;
+        margin-top: 39px;
+        margin-left: 30px;
+    }
+    .img-userguide {
+        width: 47%;
+        padding-top: 35px;
+        margin-left: 42px; 
+    }
+    
+    .card-title {
+        font-size: 17px;
+        text-align: center;
+    }
+
+
 }
 @media only screen and (max-width:1024px){
 
@@ -81,7 +119,7 @@
  footer {
     padding: 10px;
     height: 50px;
-    text-align: right;
+    text-align: center;
     background-color: #DCDCDC;
     position: relative;
     width: 100%;
@@ -94,6 +132,66 @@
     margin-right: 31px;
     margin-top: 135px;
 }
+.ct-socials {
+    display: none;
+     }
+
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    .cards-wrapper {
+        height: 177px;
+        width: 100%;
+       }
+
+       .img-makeen {
+        width: 86%;
+        margin-top: 37px;
+        margin-left: 7px;
+       }
+
+       .img-technical-support  {
+        width: 57%;
+        margin-top: 21px;
+        margin-left: 25px;
+       }
+       .img-checklist {
+        width: 57%;
+        margin-top: 20px;
+        margin-left: 23px;
+    }
+       .img-CustomerSupport {
+        width: 55%;
+        margin-top: 24px;
+        margin-left: 21px;
+    }
+       .img-listcall {
+        width: 46%;
+        margin-top: 26px;
+        margin-left: 24px;
+    }
+      .img-userguide {
+        width: 47%;
+        padding-top: 29px;
+        margin-left: 31px;
+    }
+      .card-title {
+        font-size: 8px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+     .carousel-control-prev {
+       
+       margin-right: 20px;
+      }
+      
+      .carousel-control-next {
+
+        margin-left: 20px;
+      }
+    
 }
 
 @media only screen and (max-width:768px){
@@ -140,43 +238,52 @@
 
     }
 
-    .card-circle {
-      height: 120px;
-      }
+    .cards-wrapper {
+        height: 177px;
+        width: 100%;
+       }
+       .img-makeen {
+        width: 86%;
+        margin-top: 37px;
+        margin-left: 7px;
+       }
 
-      .img-makeen {
-        display: none;
-    }
-    
-    .img-outlook {
-        display: none;
-    }
-    
-    .img-technical-support {
-       display: none;
-    }
-    
-    .img-checklist {
-        display: none;
-    }
-    
-    .img-CustomerSupport {
-        display: none;
-    }
-    
-    .img-listcall {
-        display: none;
-    }
-    
-    .img-userguide {
-        display: none;
-    }
-
-    .card-title {
-        text-align: center;
-        font-size: 16px;
+       .img-technical-support  {
+        width: 57%;
+        margin-top: 21px;
+        margin-left: 25px;
+       }
+       .img-checklist {
+        width: 57%;
         margin-top: 20px;
+        margin-left: 23px;
     }
+       .img-CustomerSupport {
+        width: 55%;
+        margin-top: 24px;
+        margin-left: 21px;
+    }
+       .img-listcall {
+        width: 46%;
+        margin-top: 26px;
+        margin-left: 24px;
+    }
+      .img-userguide {
+        width: 47%;
+        padding-top: 29px;
+        margin-left: 31px;
+    }
+      .card-title {
+        font-size: 8px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+
+    .ct-socials {
+        display: none !important;
+    }
+
     .mobile-view{
         display: none;
     }
@@ -198,6 +305,21 @@
     }
 
 }
+
+@media only screen and (max-width: 767px) {
+    .cards-wrapper {
+       display: none;
+       }
+       .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
+    
+}
+
 
 @media only screen and (max-width:574px){
     html{
@@ -293,12 +415,12 @@
         margin: 0 auto;
         width: 248px;
     }
-    .social-media ul p {
+    /* .social-media ul p {
         padding-top: 10px;
         float: right;
         color: grey;
         font-size: 13px;
-    }
+    } */
     .navbar img {
         width: 276px;
         height: 107px;
@@ -354,5 +476,11 @@
     .dropdown-item {
         text-align: right;
         color: white;
+    }
+
+    
+    .ct-socials {
+    display: none;
+     }
     }
 }
