@@ -9,6 +9,9 @@
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="/vendors/js/jquery-ui.min.css">
+    <script src="/vendors/js/jquery.min.js"></script>
+    <script src="/vendors/js/jquery-ui.min.js"></script>
     <!-- style file -->
     <link href="/your-path-to-uicons/css/uicons-regular-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,11 +21,21 @@
     <link rel="shortcut icon" href="resources/favicons/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title> الانظمة الالكترونية</title>
-    <style>
-
-</style>
+    <script type="text/javascript">
+      $(function() {
+          $('#datepicker').datepicker( {
+          changeMonth: true,
+          changeYear: true,
+          showButtonPanel: true,
+          onClose: function(dateText, inst) { 
+              $(this).datepicker('setDate', new Date(inst.selectedYear, inst.selectedMonth, 1));
+          }
+          });
+      });
+    </script>
   </head>
   <body>
+    
     <div class="container-fluid">
     <div class="header2">
 
@@ -48,11 +61,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">تسجيل خروج</a>
               </li>
-              <!-- <li class="darkmood">
-                <button  id="dark-toggle" onclick="darkFunction()">
-                  <i class="fa fa-moon-o" aria-hidden="true"></i><span></span>
-                </button>
-              </li> -->
+              
 
 
             </ul>
@@ -71,10 +80,6 @@
                 <h3>خدمات الافراد</h3>
               </div>
 
-              <!-- <div class="user-guide">
-            <button type="button" name="button">دليل المستخدم</button>
-
-          </div> -->
             </div>
           </div>
         </div>
@@ -83,79 +88,109 @@
 
 
   </div>
-  
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        
-        <div class="requests-tabs">
-        <ul class="nav nav-tabs">
-          <li class="nav-item tabs">
-            <a class="nav-link active " data-bs-toggle="tab" href="#home">الطلبات</a>
-          </li>
-          <li class="nav-item tabs">
-            <a class="nav-link" data-bs-toggle="tab" href="#profile">الاستعلامات</a>
-          </li>
-          
-          
-        </ul>
-        <div id="myTabContent" class="tab-content">
-          <div class="tab-pane fade active show" id="home">
-            <section class="category js--wp-3">
-              <div class="row ">
-                <ul>
-          
-                     <li> <a href=""> <span class="small-icon"><i class="ion-md-log-out" > </i></span>  نموذج طلب الإنارة</a></li>
-                     <li> <a href=""> <span class="small-icon"><i class="ion-md-log-in" > </i></span>  نموذج شكوى التعديات  </a></li>
-                     <li> <a href=""> <span class="small-icon"><i class="ion-md-log-in" > </i></span>  نموذج طلب السفلتة / الأرصفة </a></li>
-                      <li> <a href=""> <span class="small-icon"><i class="ion-md-log-in" > </i></span> نموذج الإعتراض على مخالفة  </a></li>
-                     <li> <a href=""> <span class="small-icon"><i class="ion-md-log-in" > </i></span> نموذج خدمة إيصال الكهرباء بدون صك </a></li>
-                    <div class="tooltip">    <span class="tooltiptext" style="font-size: 16px; font-weight: 200px; float: left;">قريباً سيتم تدشين الخدمة </span>
-                                  
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> نموذج طلب نزع الملكية  </a></li>
-                    </div>
-                   
-                </ul>
-                  </div>
-            </section>
-          </div>
-          <div class="tab-pane fade " id="profile">
-            <section class="category js--wp-3">
-              <div class="row ">
-                <ul>
-          
-                     
-          <li> <a href="inquiries1.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن طلبات الإنارة  </a></li>
-          <li> <a href="inquiries2.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span>الإستعلام عن المخالفات الصحية والفنية</a></li>
-          <li> <a href="inquiries3.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن شكاوى التعديات  </a></li>
-          <li> <a href="inquiries4.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن طلبات السفلتة / الأرصفة  </a></li>
-          <li> <a href="inquiries5.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن قبر متوفي</a></li>
-          <!--
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن طلبات نزع الملكية  </a></li>
-          
-          <li> <a href="inquiries1.html"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن الفواتير والرسوم </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن مشهد إزالة مخلفات   </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span>الإستعلام عن معاملة بإدارة الرخص </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن معاملة بيانات الخطاب  </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن معاملة برقم الوارد </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن طلبات حاويات نظافة </a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span></a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span>الإستعلام عن طلبات الإعتراض عن المخالفات</a></li>
-          <li> <a href="#"> <span class="small-icon"><i class="ion-md-log-in" > </i></span> الإستعلام عن طلبات فحص المختبر </a></li>
-          -->
-                </ul>
-                  </div>
-            </section>
-                
-          </div>
-          
-          
+  <section>
+    <div class="conainer">
+      <div class="alert2">
+        <div class="info-img2">
+          <img src="resources/images/AdobeStock_117127744.jpeg" class="new_ord"></img>
         </div>
-        
+        <div class="under-line">
+          <span style="font-size: 25px;color:#0b5438;margin-right: 33px;">طلب جديد</span>
+          <br>
+          <span style="color: #0b5438;">ــــــــــــــــــــــــــــــــــــــــــ</span>
+        </div>
+        <br>
+  
+        <form class="g-3">
+          <div class="row m-2">
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">الاسم</label>
+                <input type="text" class="col-md-8 form-control">
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">رقم الهوية</label>
+                <input type="tel" class="col-md-8 form-control">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row m-2">
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">رقم الجوال</label>
+                <div class="col-md-8">
+                  <div class="row">
+                    <input type="number" class="col-md-9 form-control" >
+                    <input type="tel" class="col-md-3 form-control text-center" value="966+" readonly>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">نوع الطلب</label>
+                <input type="text" class="col-md-8 form-control">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row m-2">
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">المدينة</label>
+                <select class="col-md-8 form-select">
+                  <option selected>قم بالاختيار</option>
+                  <option value="1">ابها</option>
+                  <option value="2">خميس مشيط</option>
+                  <option value="3">بيشة</option>
+                  <option value="4">النماص</option>
+                  <option value="5">محايل عسير</option>
+                  <option value="6">ظهران الجنوب</option>
+                </select>
+              </div>
+            </div>
+  
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">الحي</label>
+                <select class="col-md-8 form-select">
+                  <option selected>قم بالاختيار</option>
+                  <option value="1">الإسكان</option>
+                  <option value="2">الجزيرة</option>
+                  <option value="3">المنسك</option>
+                  <option value="4">الروضة</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  
+          <div class="row m-2">
+            <div class="col-md-6">
+              <div class="row">
+                <label class="col-md-4 col-form-label">تاريخ الطلب</label>
+                
+                <input type="text" class="col-md-8 form-control" placeholder="dd-mm-yyyy" name="Name" id="datepicker" >
+              </div>
+            </div>
+          </div>
+  
+          <div class="text-center">
+  
+            <button type="button" name="button" class="btn btn-outline-success">
+              <span>إرسال</span>
+            </button>
+          </div>
+  
+        </form>
+  
       </div>
     </div>
-  </div>
-</div>
+  </section>
 
 <footer>
 
@@ -163,9 +198,7 @@
 
     <ul>
       <p>جميع الحقوق محفوظة لامانة منطقة عسير</p>
-      <li> <a href="#"> <img src="resources/images/Icon awesome-snapchat-ghost.png" alt=""> </a> </li>
-      <li> <a href="#"> <img src="resources/images/Icon awesome-instagram.png" alt=""> </a> </li>
-      <li> <a href="#"> <img src="resources/images/Icon awesome-twitter.png" alt=""> </a> </li>
+      
     </ul>
   </div>
 </footer>
@@ -185,16 +218,5 @@
   <script src="vendors/js/bootstrap.js"></script>
   <script src="resources/js/js.js"></script>
 </body>
-<script>
-  $(document).ready(function() {
-    $(".card2").hide();
-    $(".card3").hide();
-    $(".card-header").click(function() {
-      $(".card2").slideToggle();
-    });
-    $(".card-header2").click(function() {
-      $(".card2").slideToggle();
-    });
-  })
-</script>
+
 </html>
