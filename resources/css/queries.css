@@ -72,8 +72,17 @@
         font-size: 17px;
         text-align: center;
     }
+    
+    
 
 
+}
+@media only screen and (max-width:1026px){
+    ul li .log-out {
+        /* position: absolute;
+        top: -13px;
+        left: 20px; */
+    }
 }
 @media only screen and (max-width:1024px){
 
@@ -303,6 +312,11 @@
         margin: 0 auto;
         margin-right: 80px;
     }
+    .category ul {
+       
+        width: 100%;
+        
+    }
 
 }
 
@@ -322,6 +336,7 @@
 
 
 @media only screen and (max-width:574px){
+
     html{
         width: 100%;
     }
@@ -336,6 +351,41 @@
         
         top: -32px;
         
+    }
+    .color-xs a{
+        color: white;
+    }
+    .category ul li a {
+        color: grey;
+        font-size: 51%;
+    }
+    .category ul li {
+        box-shadow: 0px 6px 8px 1px #0000003b;
+        height: 50px;
+        padding-right: 24px;
+        border-right: 3px solid green;
+        margin: 15px 0;
+        font-size: 150%;
+        border-radius: 15px;
+        background-color: white;
+    }
+    .tabs {
+        background-color: #c5c562;
+        border-radius: 0px 0px 0px 0;
+        width: 266px;
+        text-align: right;
+        color: white !important;
+        margin: 0 5px;
+    }
+    footer p {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .requests-tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #ffffff;
+        background-color: #20a05c;
+        border-radius: 0px 1010px 0 !important;
+        border: none;
     }
     .username{
         margin-right: 10px;
@@ -449,7 +499,7 @@
     .navbar-nav .dropdown-menu {
         position: static;
         float: none;
-        background-color: #7878780f;;
+        background-color: #f8f9fa;
     }
     .menu-list{
         background-color: #868686b0;
@@ -475,12 +525,29 @@
     }
     .dropdown-item {
         text-align: right;
+        color: #8a8a8a;
+    }
+    .dropdown-item2 {
+        text-align: right;
         color: white;
     }
 
     
     .ct-socials {
     display: none;
-     }
+    }
+    }
+}
+
+@media only screen and (max-width:320px){
+    .info-img h1 {
+        float: right;
+        padding: 12px;
+        color: #0b5438;
+        /* padding-left: 139px; */
+        /* margin-right: -22px; */
+        position: absolute;
+        right: 77px;
+        font-size: 19px;
     }
 }
