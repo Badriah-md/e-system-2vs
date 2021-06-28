@@ -604,7 +604,7 @@ ul{
 .cards-wrapper {
   display: flex;
   justify-content: center;
-  height: 250px;
+  height: 245px;
   margin-bottom: 10px;
 }
 
@@ -638,25 +638,25 @@ ul{
 .img-checklist {
    width: 57%; 
    margin-top: 20px; 
-   margin-left: 39px;
+   margin-left: 42px;
 }
 
 .img-CustomerSupport {
   width: 55%;
   margin-top: 28px;
-  margin-left: 35px;
+  margin-left: 37px;
 }
 
 .img-listcall {
   width: 46%;
   margin-top: 39px;
-  margin-left: 38px;
+  margin-left: 40px;
 }
+
 
 .img-userguide {
   width: 47%;
-  /* margin-top: 41px; */
-  padding-top: 20px;
+  padding-top: 40px;
   margin-left: 52px;
 }
 
@@ -684,6 +684,12 @@ a .card-title:active {
   top: 50%;
   transform: translateY(-50%);
 }
+
+.carousel-control-prev {
+
+  margin-left: 40px;
+}
+
 
 .carousel-inner {
   position: relative;
