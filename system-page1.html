@@ -41,7 +41,7 @@
                       <p>اسم المستخدم</p>
                     </a>
                   </li>
-                  <li class="nav-item col-lg-3 col-xs-12 col-md-3" disabled>
+                  <li class="nav-item col-lg-3 col-xs-12 col-md-3 " disabled>
                     <a class="nav-link" href="#">
                       <p id="datetime"></p>
                     </a>
@@ -62,7 +62,7 @@
             <div class="user-details">
               <ul>
                 <li class="user-date-li user-name"><span>اسم المستخدم :</span></li>
-                <li class="user-date-li date-time">اليوم : الثلاثاء التاريخ : 2021/6/14 الوقت : 11:30</li>
+                <li class="user-date-li date-time " id="datetime">اليوم : الثلاثاء التاريخ : 2021/6/14 الوقت : 11:30</li>
                 <li><button type="button" name="button" class="log-out btn btn-outline-success">
                   <a href="index.html" style="color: green; ">
                     <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
@@ -236,10 +236,10 @@
       </footer>
 
   <script src="resources/js/js.js"></script>
+
 </body>
 <script>
 "use strict";
-
 var today = new Date();
 var dayDate = today.getMonth()
 var dayNum = today.getDay()

@@ -897,3 +897,7 @@ input[type=checkbox], input[type=radio] {
 input[type=radio]:active{
   color: green;
 }
+.user-i i{
+  width: 28px;
+    line-height: 2.5;
+}

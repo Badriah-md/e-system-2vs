@@ -71,7 +71,11 @@
     text-align: center;
 }
 
-
+ul li .log-out {
+    position: absolute;
+    top: -12px;
+    left: 17px;
+}
 
 
 }
@@ -108,18 +112,28 @@
     }
 
     ul li .log-out {
-    left: -54px;
+    left: 18px;
      
 }
     .user-details {
         text-align: right;
         /* margin-top: 20px; */
         font-weight: 300;
-        margin-right: 442px;
+        margin-right: 392px;
         line-height: inherit;
         color: #0b5438;
         position: absolute;
         right: 7px;
+    }
+    .info-img .seperator img {
+        float: right;
+        position: relative;
+        right: 14px;
+        height: 86px;
+        width: 8px;
+        border-radius: 10px;
+        vertical-align: middle;
+        top: 7px;
     }
     
  .timestamp{
@@ -210,15 +224,15 @@
         margin-top: -1px;
     }
     .info-img h1 {
-        font-size: 34px;
+        font-size: 24px;
         padding: 30px;
     }
 
     .info-img .seperator img {
-        margin-right: -55px;
+        margin-right: -45px;
     }
     .user-details {
-        margin-right: 371px;
+        margin-right: 256px;
     }
     .user-details ul {
         margin-right: 15px;
@@ -414,7 +428,7 @@
     /* margin-right: -22px; */
     position: absolute;
     right: 77px;
-    font-size: 26px;
+    font-size: 20px;
     }
     .list {
         margin-right: 0px;
@@ -499,7 +513,10 @@
     .navbar-nav .dropdown-menu {
         position: static;
         float: none;
-        background-color: #f8f9fa;
+        background-color: #f8f9fa05;
+}
+
+
     }
     .menu-list{
         background-color: #868686b0;
@@ -515,7 +532,7 @@
 
     }
     footer {
-        margin-top: 151px;
+        margin-bottom: 0px;
     }
     .show2 {
         /* margin-top: 11px; */
@@ -541,13 +558,7 @@
 
 @media only screen and (max-width:320px){
     .info-img h1 {
-        float: right;
-        padding: 12px;
-        color: #0b5438;
-        /* padding-left: 139px; */
-        /* margin-right: -22px; */
-        position: absolute;
-        right: 77px;
-        font-size: 19px;
+        
+        font-size: 10px !important;
     }
 }
