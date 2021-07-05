@@ -60,10 +60,10 @@
     margin-top: 39px;
     margin-left: 30px;
 }
-.img-userguide {
+.img-system {
     width: 47%;
     padding-top: 35px;
-    margin-left: 42px; 
+    margin-left: 38px; 
 }
 
 .card-title {
@@ -194,10 +194,10 @@ ul li .log-out {
         margin-top: 26px;
         margin-left: 24px;
     }
-      .img-userguide {
+      .img-system{
         width: 47%;
         padding-top: 29px;
-        margin-left: 30px;
+        margin-left: 26px;
     }
       .card-title {
         font-size: 8px;
@@ -291,7 +291,7 @@ ul li .log-out {
         margin-top: 26px;
         margin-left: 24px;
     }
-      .img-userguide {
+      .img-system {
         width: 47%;
         padding-top: 29px;
         margin-left: 31px;
