@@ -31,7 +31,8 @@
           <div class="mobile-view col-xs-12 user-option">
             <nav class="navbar navbar-expand-lg navbar-light  user-menu ">
 
-              <button class="navbar-toggler show2" type="button" data-toggle="collapse" data-target="#navbarNvDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler show2" type="button" data-toggle="collapse" data-target="#navbarNvDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse sys-nav show2" id="navbarNvDropdown">
@@ -51,7 +52,7 @@
                       <p>تسجيل خروج</p>
                     </a>
                   </li>
-        
+
                 </ul>
               </div>
             </nav>
@@ -62,14 +63,15 @@
             <div class="user-details">
               <ul>
                 <li class="user-date-li user-name"><span>اسم المستخدم :</span></li>
-                <li class="user-date-li date-time " id="datetime">اليوم : الثلاثاء التاريخ : 2021/6/14 الوقت : 11:30</li>
+                <li class="user-date-li date-time " id="datetime">اليوم : الثلاثاء التاريخ : 2021/6/14 الوقت : 11:30
+                </li>
                 <li><button type="button" name="button" class="log-out btn btn-outline-success">
-                  <a href="index.html" style="color: green; ">
-                    <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
-                  </a>
+                    <a href="index.html" style="color: green; ">
+                      <i class="log-out-icon fa fa-power-off" aria-hidden="true"></i><span>خروج</span>
+                    </a>
                   </button></li>
               </ul>
-             
+
             </div>
           </div>
 
@@ -145,11 +147,11 @@
             </a>
           </li>
 
-          <li class="nav-item col-xl-3 col-lg-2 col-md-1 col-xs-12">
+          <!-- <li class="nav-item col-xl-3 col-lg-2 col-md-1 col-xs-12">
             <a class="nav-link" href="#">
               <p>دليل المستخدم </p>
             </a>
-          </li>
+          </li> -->
 
         </ul>
       </div>
@@ -214,78 +216,73 @@
       </div>
     </div>
   </div>
-  
 
-           
- <ul class="ct-socials">
-  <li>
-     <a href="https://twitter.com/asirmunicipal" target="_blank"><i class="fa fa-twitter"></i></a>
-  </li>
-  <li>
-     <a href="https://story.snapchat.com/u/asirmunicipal" target="_blank"><i class="fa fa-snapchat"></i></a>
-  </li>
-  <li>
-     <a href="https://www.instagram.com/asirmunicipal" target="_blank"><i class="fa fa-instagram"></i></a>
-  </li>
-  <li>
-    <a href="https://www.youtube.com/channel/UCYAmLdGy8NUb3E71T9nMLlg/videos" target="_blank"><i class="fa fa-youtube"></i></a>
-  </li>
-</ul>
-   
 
-   <footer>
 
-     <p> جميع الحقوق محفوظة لأمانة منطقة عسير   ©  2021 </p>
+  <ul class="ct-socials">
+    <li>
+      <a href="https://twitter.com/asirmunicipal" target="_blank"><i class="fa fa-twitter"></i></a>
+    </li>
+    <li>
+      <a href="https://story.snapchat.com/u/asirmunicipal" target="_blank"><i class="fa fa-snapchat"></i></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/asirmunicipal" target="_blank"><i class="fa fa-instagram"></i></a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/channel/UCYAmLdGy8NUb3E71T9nMLlg/videos" target="_blank"><i
+          class="fa fa-youtube"></i></a>
+    </li>
+  </ul>
 
-     </div>
 
-      </footer>
+  <footer>
+
+    <p> جميع الحقوق محفوظة لأمانة منطقة عسير © 2021 </p>
+
+    </div>
+
+  </footer>
 
   <script src="resources/js/js.js"></script>
 
 </body>
 <script>
-"use strict";
-var today = new Date();
-var dayDate = today.getMonth()
-var dayNum = today.getDay()
+  "use strict";
+  var today = new Date();
+  var dayDate = today.getMonth()
+  var dayNum = today.getDay()
   var day = today.getDay();
-  var daylist = ["الاحد","الاثنين","الثلاثاء","الاربعاء","الخميس","الجمعة","السبت"];
+  var daylist = ["الاحد", "الاثنين", "الثلاثاء", "الاربعاء", "الخميس", "الجمعة", "السبت"];
   console.log("Today is : " + daylist[day] + ".");
   var hour = today.getHours();
   var minute = today.getMinutes();
   var second = today.getSeconds();
-  var prepand = (hour >= 12)? " م ":" ص ";
-  hour = (hour >= 12)? hour - 12: hour;
-  if (hour===0 && prepand===' م ') 
-  { 
-  if (minute===0 && second===0)
-  { 
-  hour=12;
-  prepand=' Noon';
-  } 
-  else
-  { 
-  hour=12;
-  prepand=' م';
-  } 
-  } 
-  if (hour===0 && prepand===' ص ') 
-  { 
-  if (minute===0 && second===0)
-  { 
-  hour=12;
-  prepand=' Midnight';
-  } 
-  else
-  { 
-  hour=12;
-  prepand=' ص';
-  } 
-  } 
-console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+  var prepand = (hour >= 12) ? " م " : " ص ";
+  hour = (hour >= 12) ? hour - 12 : hour;
+  if (hour === 0 && prepand === ' م ') {
+    if (minute === 0 && second === 0) {
+      hour = 12;
+      prepand = ' Noon';
+    }
+    else {
+      hour = 12;
+      prepand = ' م';
+    }
+  }
+  if (hour === 0 && prepand === ' ص ') {
+    if (minute === 0 && second === 0) {
+      hour = 12;
+      prepand = ' Midnight';
+    }
+    else {
+      hour = 12;
+      prepand = ' ص';
+    }
+  }
+  console.log("Current Time : " + hour + prepand + " : " + minute + " : " + second);
 
-document.getElementById("datetime").innerHTML =  daylist[day]+"    "+hour+":"+minute+":"+second+prepand// shows current date/time
+  document.getElementById("datetime").innerHTML = daylist[day] + "    " + hour + ":" + minute + ":" + second + prepand// shows current date/time
 </script>
 
 </html>

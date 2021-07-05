@@ -361,6 +361,9 @@ ul li .log-out {
         width: 100%;
         overflow-x:hidden;
     }
+    .info-img h1 {
+        font-size: 23px;
+    }
     .announcement .card {
         
         top: -32px;
@@ -514,7 +517,7 @@ ul li .log-out {
         position: static;
         float: none;
         background-color: #f8f9fa05;
-}
+
 
 
     }
@@ -553,7 +556,7 @@ ul li .log-out {
     .ct-socials {
     display: none;
     }
-    }
+    
 }
 
 @media only screen and (max-width:320px){
