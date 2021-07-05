@@ -229,13 +229,13 @@ ul li .log-out {
     }
 
     .info-img .seperator img {
-        margin-right: -45px;
+        margin-right: 9px;
     }
     .user-details {
         margin-right: 256px;
     }
     .user-details ul {
-        margin-right: 15px;
+        margin-right: 64px;
     }
     ul li .log-out {
         left: 113px;
